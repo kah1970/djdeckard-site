@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  djdeckard.com — HOME (V1 scaffold, 2026-06-14)
+  Stack: static HTML/CSS/JS, no frameworks. Shared styles in /css/deckard.css (no inline styles).
+  This is the template page — nav, footer, <head> boilerplate get cloned to the other 6 pages.
+  PLACEHOLDERS flagged with [PLACEHOLDER]; assets land in /assets, copy is Deckard-register
+  draft for Keith to finalize (Deckard voice is manual). See docs/dj-deckard-site/djdeckard-build-plan.md
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ Deckard — Breakbeat, Funk & House DJ · San Francisco</title>
+<meta name="description" content="DJ Deckard — a San Francisco selector spinning breakbeat, funk and house. Twenty-five years on the floor: Space Cowboys, Breakfast of Champions, Burning Man. Mixes, gigs, and booking.">
+<link rel="canonical" href="https://djdeckard.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<!-- favicons (drop files in root; derive from the gold DECKARD. wordmark) -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F5EDE0">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djdeckard.com/">
+<meta property="og:title" content="DJ Deckard — Breakbeat, Funk & House DJ · San Francisco">
+<meta property="og:description" content="Twenty-five years on the floor. Still digging. Breakbeat, funk and house from the back half of the night.">
+<meta property="og:image" content="https://djdeckard.com/assets/img/og/deckard-og.jpg">
+<meta property="og:site_name" content="DJ Deckard">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DJ Deckard — Breakbeat, Funk & House DJ · San Francisco">
+<meta name="twitter:description" content="Twenty-five years on the floor. Still digging.">
+<meta name="twitter:image" content="https://djdeckard.com/assets/img/og/deckard-og.jpg">
+
+<!-- Fonts (brand system: Bebas Neue / DM Serif Display / DM Sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/deckard.css">
+
+<!-- TODO: add Deckard's own Google Analytics id before launch (separate from ADJJ) -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://djdeckard.com/#website",
+      "url": "https://djdeckard.com/",
+      "name": "DJ Deckard",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://djdeckard.com/#artist",
+      "name": "DJ Deckard",
+      "url": "https://djdeckard.com/",
+      "genre": ["Breakbeat", "Funk", "House", "Electronic"],
+      "foundingLocation": "San Francisco, CA",
+      "sameAs": [
+        "https://lumensoundworks.com",
+        "https://adjsjourney.com",
+        "https://soundcloud.com/deckard-dj",
+        "https://www.instagram.com/dj_deckard",
+        "https://www.facebook.com/djdeckard"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV (cloned to all pages) ===== -->
+<header class="hero gh-light grain">
+  <div class="wrap">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html">DECKARD<b>.</b></a>
+      <div class="nav-links">
+        <a href="mixes.html">Mixes</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bio.html">Bio</a>
+        <a class="nav-cta" href="booking.html">Book</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <main id="main" class="hero__grid">
+      <div class="hero__copy">
+        <div class="kicker">San Francisco · Selector</div>
+        <h1 class="display">BREAKS.<br><span class="hot">FUNK.</span><br><span class="amb">HOUSE.</span></h1>
+        <p class="tagline">Twenty-five years on the floor. Still digging.</p>
+        <p class="lead">Breakbeat, funk and house from the back half of the night. Space Cowboys, Breakfast of Champions, the playa, and wherever the floor needs it next.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://soundcloud.com/deckard-dj" target="_blank" rel="noopener">Latest mix<small>SoundCloud</small></a>
+          <a class="btn btn--ghost" href="https://adjsjourney.com" target="_blank" rel="noopener">Listen — the podcast<small>A DJ's Journey</small></a>
+          <a class="btn btn--ghost" href="booking.html">Book Deckard<small>Inquire</small></a>
+        </div>
+      </div>
+
+      <!-- hero media: poster photo when present, gradient placeholder until then -->
+      <div class="media-frame">
+        <img src="assets/img/hero/hero-poster.jpg" alt="DJ Deckard — San Francisco selector" onerror="this.style.display='none'">
+      </div>
+    </main>
+  </div>
+</header>
+
+<!-- ===== LATEST MIXES ===== -->
+<section class="section gh-light--soft" aria-labelledby="mixes-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">On the decks</div>
+        <h2 class="h2" id="mixes-h">Latest mixes</h2>
+      </div>
+      <a class="link-more" href="mixes.html">All mixes →</a>
+    </div>
+    <!-- [PLACEHOLDER copy] dry blurbs are Deckard-register drafts for Keith to finalize -->
+    <div class="grid grid--4">
+      <a class="card" href="https://soundcloud.com/deckard-dj/after-party-2-into-the-night" target="_blank" rel="noopener">
+        <div class="card__media"><img src="assets/img/mixes/after-party.jpg" alt="After Party 2 — Into the Night cover art" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__meta">After Hours · Open Format</div>
+          <div class="card__title">After Party 2 — Into the Night</div>
+          <p class="card__note">The set after the set. Deep into the small hours, no agenda but the floor.</p>
+        </div>
+      </a>
+      <a class="card" href="https://soundcloud.com/spacecowboys/ripecast-deckard-breakfast-of-champions-live-26" target="_blank" rel="noopener">
+        <div class="card__media"><img src="assets/img/mixes/boc-live-26.jpg" alt="RIPEcast — Breakfast of Champions Live '26 cover art" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__meta">Breakfast of Champions · 2026</div>
+          <div class="card__title">RIPEcast — BoC Live '26</div>
+          <p class="card__note">Recorded live at the New Year's Day block party. Built for the back half of the night.</p>
+        </div>
+      </a>
+      <a class="card" href="https://soundcloud.com/deckard-dj/mdoc-underworld" target="_blank" rel="noopener">
+        <div class="card__media"><img src="assets/img/mixes/mdoc-underworld.jpg" alt="My Definition of Chill — Underworld Edition cover art" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__meta">My Definition of Chill · Underworld</div>
+          <div class="card__title">MDoC — Underworld Edition</div>
+          <p class="card__note">Late-night downtempo, dialed for the dark. The most recent chapter.</p>
+        </div>
+      </a>
+      <a class="card" href="https://soundcloud.com/deckard-dj/deckard-my-definition-of-chill-xii" target="_blank" rel="noopener">
+        <div class="card__media"><img src="assets/img/mixes/chill-xii.jpg" alt="My Definition of Chill XII cover art" loading="lazy"></div>
+        <div class="card__body">
+          <div class="card__meta">My Definition of Chill · Vol. XII</div>
+          <div class="card__title">My Definition of Chill XII</div>
+          <p class="card__note">Downtempo and unhurried — for the comedown, the morning, the in-between.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UPCOMING GIGS ===== -->
+<section class="section" aria-labelledby="gigs-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Where next</div>
+        <h2 class="h2" id="gigs-h">Upcoming gigs</h2>
+      </div>
+      <a class="link-more" href="gigs.html">All gigs →</a>
+    </div>
+    <div class="gig-list">
+      <div class="gig-row">
+        <div class="gig-row__date">Jul 4</div>
+        <div>
+          <div class="gig-row__name">Ashland Rising — 4th of July Weekend</div>
+          <div class="gig-row__where">Ashland, OR</div>
+        </div>
+        <div class="gig-row__tag">Festival</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY TEASER ===== -->
+<section class="section gh-light--soft" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">From the floor</div>
+        <h2 class="h2" id="gallery-h">Gallery</h2>
+      </div>
+      <a class="link-more" href="gallery.html">Full gallery →</a>
+    </div>
+    <div class="grid grid--4">
+      <div class="gallery-tile" data-lightbox><img src="assets/img/gallery/web/IMG_4280.jpg" alt="DJ Deckard at a venue" loading="lazy"></div>
+      <div class="gallery-tile" data-lightbox><img src="assets/img/gallery/web/FullSizeRender.jpg" alt="DJ Deckard at a festival crowd" loading="lazy"></div>
+      <div class="gallery-tile" data-lightbox><img src="assets/img/gallery/web/IMG_3191.jpg" alt="DJ Deckard set" loading="lazy"></div>
+      <div class="gallery-tile" data-lightbox><img src="assets/img/gallery/web/IMG_2957.jpg" alt="DJ Deckard on the decks" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HUB BLOCKS (points out: ADJJ + booking/LSW) ===== -->
+<section class="section" aria-labelledby="hub-h">
+  <div class="wrap">
+    <h2 class="visually-hidden" id="hub-h">Elsewhere in the world of Deckard</h2>
+    <div class="hubs">
+      <div class="hub-card">
+        <div class="kicker">The podcast</div>
+        <h3 class="h3">A DJ's Journey</h3>
+        <p>Deckard's other home — long-form conversations with the DJs and producers who built the culture.</p>
+        <a class="btn btn--ghost" href="https://adjsjourney.com" target="_blank" rel="noopener">Listen in</a>
+      </div>
+      <div class="hub-card">
+        <div class="kicker">Bookings</div>
+        <h3 class="h3">Book Deckard</h3>
+        <p>Festivals, clubs, private and corporate floors. Production and booking run through Lumen Soundworks.</p>
+        <a class="btn btn--primary" href="booking.html">Inquire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER (cloned to all pages) ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">DECKARD<b>.</b></a>
+        <p>Breakbeat, funk and house. San Francisco, and wherever the floor needs it next.</p>
+        <a class="lsw-ref" href="https://lumensoundworks.com" target="_blank" rel="noopener" aria-label="Bookings and production with Lumen Soundworks">
+          <img src="assets/img/logos/lumensoundworks.png" alt="Lumen Soundworks" onerror="this.style.display='none'">
+          <span>Booking &amp; production with <b>Lumen Soundworks</b></span>
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="mixes.html">Mixes</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bio.html">Bio / EPK</a>
+        <a href="booking.html">Booking</a>
+        <a href="links.html">Links</a>
+      </nav>
+      <nav class="footer-col" aria-label="Elsewhere">
+        <h4>Elsewhere</h4>
+        <a href="https://soundcloud.com/deckard-dj" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://www.instagram.com/dj_deckard" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/djdeckard" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://adjsjourney.com" target="_blank" rel="noopener">A DJ's Journey</a>
+        <a href="https://lumensoundworks.com" target="_blank" rel="noopener">Lumen Soundworks</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DJ Deckard. Inspired by actual events.</span>
+      <div class="socials">
+        <a href="https://soundcloud.com/deckard-dj" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://www.instagram.com/dj_deckard" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/djdeckard" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MOBILE NAV DRAWER ===== -->
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-close" aria-label="Close menu">Close ✕</button>
+  <a href="mixes.html">Mixes</a>
+  <a href="gigs.html">Gigs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="bio.html">Bio</a>
+  <a href="booking.html">Book</a>
+</div>
+
+<script src="js/deckard.js" defer></script>
+</body>
+</html>

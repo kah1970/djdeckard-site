@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- djdeckard.com — BOOKING. Netlify Forms (works once deployed on Netlify; won't submit on file://).
+     Selling rule: book Deckard here, reference Lumen Soundworks; no hard sell. -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Deckard — DJ Deckard</title>
+<meta name="description" content="Book DJ Deckard for festivals, clubs, private and corporate events. Send an inquiry — production and booking run through Lumen Soundworks.">
+<link rel="canonical" href="https://djdeckard.com/booking.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F5EDE0">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djdeckard.com/booking.html">
+<meta property="og:title" content="Book Deckard">
+<meta property="og:description" content="Festivals, clubs, private and corporate floors.">
+<meta property="og:image" content="https://djdeckard.com/assets/img/og/deckard-og.jpg">
+<meta property="og:site_name" content="DJ Deckard">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/deckard.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="gh-light--soft">
+  <div class="wrap">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html">DECKARD<b>.</b></a>
+      <div class="nav-links">
+        <a href="mixes.html">Mixes</a>
+        <a href="gigs.html">Gigs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bio.html">Bio</a>
+        <a class="nav-cta" href="booking.html" aria-current="page">Book</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="page-head" id="main">
+      <div class="kicker">Bookings</div>
+      <h1 class="page-title">Book Deckard</h1>
+      <p class="page-intro">Festivals, clubs, private and corporate floors. Tell me what you're planning — no obligation, no hard sell.</p>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="form-grid">
+      <!-- Netlify Forms: works once deployed to Netlify. -->
+      <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="booking">
+        <p hidden><label>Leave blank: <input name="bot-field"></label></p>
+        <div class="field">
+          <label for="b-name">Name</label>
+          <input id="b-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="b-email">Email</label>
+          <input id="b-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="b-date">Event date</label>
+          <input id="b-date" name="event_date" type="date">
+        </div>
+        <div class="field">
+          <label for="b-type">Event type</label>
+          <select id="b-type" name="event_type">
+            <option value="">Select…</option>
+            <option>Festival</option>
+            <option>Club / nightlife</option>
+            <option>Private party</option>
+            <option>Corporate</option>
+            <option>Wedding</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-msg">Details</label>
+          <textarea id="b-msg" name="message" placeholder="Venue, city, timing, vibe — whatever you've got."></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">Send inquiry</button>
+      </form>
+
+      <aside class="book-aside">
+        <h3 class="h3">What helps</h3>
+        <ul class="ticks">
+          <li>Date, city, and venue (or the general area)</li>
+          <li>Set length and rough timing</li>
+          <li>Crowd and the kind of night you want</li>
+          <li>Whether sound/lighting is handled or needed</li>
+        </ul>
+        <p class="mt-2">Production and full-service event booking run through <a href="https://lumensoundworks.com" target="_blank" rel="noopener"><b>Lumen Soundworks</b></a> — they handle the logistics behind the music.</p>
+        <p>Prefer email? <a href="mailto:team@djdeckard.com">team@djdeckard.com</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">DECKARD<b>.</b></a>
+        <p>Breakbeat, funk and house. San Francisco, and wherever the floor needs it next.</p>
+        <a class="lsw-ref" href="https://lumensoundworks.com" target="_blank" rel="noopener" aria-label="Bookings and production with Lumen Soundworks">
+          <img src="assets/img/logos/lumensoundworks.png" alt="Lumen Soundworks" onerror="this.style.display='none'">
+          <span>Booking &amp; production with <b>Lumen Soundworks</b></span>
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="mixes.html">Mixes</a><a href="gigs.html">Gigs</a><a href="gallery.html">Gallery</a>
+        <a href="bio.html">Bio / EPK</a><a href="booking.html">Booking</a><a href="links.html">Links</a>
+      </nav>
+      <nav class="footer-col" aria-label="Elsewhere">
+        <h4>Elsewhere</h4>
+        <a href="https://soundcloud.com/deckard-dj" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://www.instagram.com/dj_deckard" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/djdeckard" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://adjsjourney.com" target="_blank" rel="noopener">A DJ's Journey</a>
+        <a href="https://lumensoundworks.com" target="_blank" rel="noopener">Lumen Soundworks</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DJ Deckard. Inspired by actual events.</span>
+      <div class="socials">
+        <a href="https://soundcloud.com/deckard-dj" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://www.instagram.com/dj_deckard" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/djdeckard" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-close" aria-label="Close menu">Close ✕</button>
+  <a href="mixes.html">Mixes</a><a href="gigs.html">Gigs</a><a href="gallery.html">Gallery</a>
+  <a href="bio.html">Bio</a><a href="booking.html">Book</a>
+</div>
+<script src="js/deckard.js" defer></script>
+</body>
+</html>
